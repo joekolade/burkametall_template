@@ -1,0 +1,13 @@
+<f:layout name="Default" />
+
+<f:section name="stage">
+    <!-- Stage -->
+    <f:cObject typoscriptObjectPath="lib.contentStage" />
+
+</f:section>
+
+<f:section name="main">
+
+  {contentMain -> f:format.raw()}
+
+</f:section>

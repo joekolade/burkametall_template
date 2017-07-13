@@ -1,0 +1,120 @@
+//
+// Variables for Fetscher Projekt
+//
+
+$wrapper-max-width: 1200px;
+$header-bg: #e8e8e8;
+$border-radius-base: 0;
+
+$default-transition-property: all;
+$default-transition-duration: 0.3s;
+$default-transition-ease: linear;
+
+$default-transition: $default-transition-property $default-transition-duration $default-transition-ease;
+
+//
+// Font-size
+//
+$font-size-base:          15px;
+// $font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~19px
+// $font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~13px
+
+$font-size-h1:            floor(($font-size-base * 2)); // ~30px
+$font-size-h2:            floor(($font-size-base * 1.6666666667)); // ~25px
+$font-size-h3:            ceil(($font-size-base * 1.33333)); // ~20px
+// $font-size-h4:            ceil(($font-size-base * 1.25)) !default; // ~18px
+// $font-size-h5:            $font-size-base !default;
+// $font-size-h6:            ceil(($font-size-base * 0.85)) !default; // ~12px
+
+$font-weight-bold: 600;
+
+//
+// Colors
+//
+
+$color-burka: (
+  main-blue: #2a5dfb,
+  dark-blue: #2c00d5,
+  grey-light: #eeeeee
+);
+
+$white: #ffffff;
+$orange: #ff7d00;
+$orange-dark: #e97100;
+$grey: #b6b6b6;
+$grey-dark: #333333;
+$grey-special: #4d4d4d;
+$grey-middle: #878787;
+$blue: #00a5e9;
+$blue-light: #dbeefb;
+$blue-dark: #c2cdd5;
+
+
+$link-hover-decoration: underline;
+$link-color: $grey-dark;
+
+$brand-warning: map-get($color-burka, dark-blue);
+
+//
+// Langmenu
+//
+$flag-opacity: 0.4;
+$flag-border: thin solid white;
+
+$meta-menu-color: $grey-middle;
+$home-icon-width: 40px;
+$home-icon-border: 1px solid $meta-menu-color;
+
+//
+// Navbar
+//
+$navbar-height: 45px;
+$navbar-margin-bottom: 0;
+$navbar-default-color: white;
+$navbar-default-bg: map-get($color-burka, main-blue);
+$navbar-default-border: white;
+// Navbar links
+$navbar-default-link-color: white;
+$navbar-default-link-hover-color: white;
+$navbar-default-link-hover-bg: map-get($color-burka, dark-blue);
+$navbar-default-link-active-color: white;
+$navbar-default-link-active-bg: map-get($color-burka, dark-blue);
+
+// Navbar toggle
+$navbar-default-toggle-hover-bg:           map-get($color-burka, main-blue);
+$navbar-default-toggle-icon-bar-bg:        white;
+$navbar-default-toggle-border-color:       none;
+
+$item-min-width: 160px;
+
+//
+// Stage
+//
+$stage-bg-color: $grey;
+$stage-sm-bottom: 70px;
+
+//
+// Quick form
+//
+$quickform-width: 352px;
+$quickform-toggle-height: 45px;
+
+//
+// Footer
+//
+// $footer-color: $text-color;
+$footer-bg-color:  map-get($color-burka, grey-light);
+
+$superfooter-color: white;
+$superfooter-bg-color: $blue-dark;
+
+
+// Breadcrumb
+//
+
+//$breadcrumb-padding-vertical:   8px !default;
+$breadcrumb-padding-horizontal: 0;
+$breadcrumb-bg: $white;
+$breadcrumb-color: #868686;
+$breadcrumb-active-color: $grey-dark;
+$breadcrumb-separator: '|';
