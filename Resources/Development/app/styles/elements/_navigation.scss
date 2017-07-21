@@ -197,7 +197,7 @@ a {
 
   > i.fa-angle-down,
   > i.fa-chevron-down {
-    background: $navbar-default-bg;
+    background: $navbar-default-bg !important;
 
     margin-left: $grid-gutter-width;
     padding-left: $grid-gutter-width/2;
@@ -208,8 +208,15 @@ a {
     margin-bottom: -11px;
 
     &:hover {
-      background: $navbar-default-link-hover-bg;
+      background: $navbar-default-link-hover-bg !important;
       color: black;
+    }
+
+    .subnav & {
+      padding-top: 3px;
+      padding-bottom: 4px;
+      margin-top: -3px;
+      margin-bottom: -4px;
     }
 
   }

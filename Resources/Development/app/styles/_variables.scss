@@ -36,6 +36,7 @@ $color-burka: (
   main-blue: #004DA1,
   dark-blue: #00326D,
   grey-light: #B6B6B6,
+  grey-ultralight: #E6E6E6,
 );
 
 $white: #ffffff;
@@ -103,7 +104,7 @@ $quickform-toggle-height: 45px;
 // Footer
 //
 // $footer-color: $text-color;
-$footer-bg-color:  map-get($color-burka, grey-light);
+$footer-bg-color:  map-get($color-burka, grey-ultralight);
 
 $superfooter-color: white;
 $superfooter-bg-color: $blue-dark;
