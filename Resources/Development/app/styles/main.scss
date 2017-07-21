@@ -60,32 +60,18 @@ body {
 
 
 
-// Images
+// Elements
 @import "elements/responsive_images";
-
-// Fetch header styles
 @import "elements/header";
-
-// Fetch navigation styles
+@import "elements/metanavi";
 @import "elements/navigation";
-
-// Fetch stage styles
 @import "elements/stage";
-
-// Fetch quickform styles
 @import "elements/quickform";
-
-// Fetch form styles
 @import "elements/forms";
-
-// Fetch content styles
 @import "elements/content";
-
-// Fetch footer styles
 @import "elements/footer";
-
-// Spacer Element (Mask)
 @import "elements/spacer_mask";
+
 
 // EXT:cookieconsent2
 @import "extensions/cookieconsent2";
