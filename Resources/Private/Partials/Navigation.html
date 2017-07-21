@@ -18,10 +18,12 @@
 
 
             <div class="metaNavi">
-                <!-- Language de/en/fr -->
-                <nav class="lang">
-                    <f:cObject typoscriptObjectPath="lib.langSwitch" />
-                </nav>
+                <f:if condition="{langSwitch}">
+                    <!-- Language de/en/fr -->
+                    <nav class="lang">
+                        <f:cObject typoscriptObjectPath="lib.langSwitch" />
+                    </nav>
+                </f:if>
                 <!-- Metamenu -->
                 <nav class="meta">
                     {metaNavi -> f:format.raw()}

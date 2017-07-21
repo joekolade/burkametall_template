@@ -7,14 +7,15 @@ header.container {
   position: relative;
 
   .logoWrap {
-    margin: 41px 23px 0;
+    margin: 27px 0 0;
     max-width: 50%;
 
     .logo {
       img,
       svg {
-        width: 100%;
+        width: 115%;
         height: auto;
+        max-width: 340px;
       }
     }
   }
@@ -26,8 +27,8 @@ header.container {
   /* Responsive: Portrait tablets and up */
   @media screen and (min-width: 768px) {
     .logoWrap{
-      margin-left: 82px;
-      margin-top: 58px;
+      margin-left: 64px;
+      margin-top: 22px;
       max-width: 60%;
     }
     .claim {
@@ -38,7 +39,8 @@ header.container {
     .logo {
       float: left;
       margin-right: 25px;
-      width: 296px;
+      //width: 296px;
+      max-width: 340px;
     }
   }
 
