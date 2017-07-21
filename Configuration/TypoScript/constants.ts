@@ -56,10 +56,10 @@ fetschersite {
 }
 # DEV Domains
 [hostname = burkametall.local] || [globalString = IENV:HTTP_HOST = burkametall.local]
-    config.domain = burkametall.local
+    fetschersite.site.domain = burkametall.local
 [global]
 [hostname = dev.burka-metallbau.de] || [globalString = IENV:HTTP_HOST = dev.burka-metallbau.de]
-    config.domain = dev.burka-metallbau.de
+    fetschersite.site.domain = dev.burka-metallbau.de
 [global]
 
 
