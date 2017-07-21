@@ -56,8 +56,8 @@ fetschersite {
 [hostname = burkametall.local] || [globalString = IENV:HTTP_HOST = burkametall.local]
     fetschersite.site.domain = burkametall.local
 [global]
-[hostname = dev.burka-metallbau.de] || [globalString = IENV:HTTP_HOST = dev.burka-metallbau.de]
-    fetschersite.site.domain = dev.burka-metallbau.de
+[hostname = update.burka-metallbau.de] || [globalString = IENV:HTTP_HOST = update.burka-metallbau.de]
+    fetschersite.site.domain = update.burka-metallbau.de
 [global]
 
 
