@@ -168,21 +168,21 @@ gulp.task('wiredep', () => {
 
 // gulp: typo3
 gulp.task('t3copyStyles', ['html'], () => {
-  return gulp.src([
-    'dist/styles/**/*'
+    return gulp.src([
+        'dist/styles/**/*'
     ], {
-    dot: true
-  }).pipe(gulp.dest('../Public/Css'));
+        dot: true
+    }).pipe(gulp.dest('../Public/Css'));
 });
 gulp.task('t3copyJs', () => {
-  return gulp.src([
-    'dist/scripts/**/*'
+    return gulp.src([
+        'dist/scripts/**/*'
     ], {
-    dot: true
-  }).pipe(gulp.dest('../Public/JavaScripts'));
- });
+        dot: true
+    }).pipe(gulp.dest('../Public/JavaScripts'));
+});
 gulp.task('typo3', ['t3copyStyles'], () => {
-  gulp.start('t3copyJs');
+    gulp.start('t3copyJs');
 });
 
 gulp.task('build', ['lint', 'images', 'fonts', 'extras', 'typo3'], () => {
