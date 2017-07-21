@@ -1,22 +1,27 @@
+config.contentObjectExceptionHandler = 0
+
+
 /**
-* Template
-*
-*/
+ * Template
+ *
+ */
 
 page = PAGE
+
 page.10 = FLUIDTEMPLATE
 page.10 {
     templateName = Page
+
     layoutRootPaths {
-        10 = EXT:fetschersite/Resources/Private/Layouts
+        10 = EXT:burkametall_template/Resources/Private/Layouts
     }
 
     templateRootPaths {
-        10 = EXT:fetschersite/Resources/Private/Templates
+        10 = EXT:burkametall_template/Resources/Private/Templates
     }
 
     partialRootPaths {
-        10 = EXT:fetschersite/Resources/Private/Partials
+        10 = EXT:burkametall_template/Resources/Private/Partials
     }
 }
 
@@ -54,17 +59,17 @@ config.headerComment (
 page.includeCSS {
     googlefont = https://fonts.googleapis.com/css?family=Signika:300,600
     googlefont.external = 1
-    main = EXT:fetschersite/Resources/Public/Css/main.css
+    main = EXT:burkametall_template/Resources/Public/Css/main.css
 }
 
-page.includeJS.modernizr = EXT:fetschersite/Resources/Public/JavaScripts/vendor/modernizr.js
+page.includeJS.modernizr = EXT:burkametall_template/Resources/Public/JavaScripts/vendor/modernizr.js
 page.includeJS {
-    vendor = EXT:fetschersite/Resources/Public/JavaScripts/vendor.js
+    vendor = EXT:burkametall_template/Resources/Public/JavaScripts/vendor.js
 }
 
 page.includeJSFooter {
-    plugins = EXT:fetschersite/Resources/Public/JavaScripts/plugins.js
-    main = EXT:fetschersite/Resources/Public/JavaScripts/main.js
+    plugins = EXT:burkametall_template/Resources/Public/JavaScripts/plugins.js
+    main = EXT:burkametall_template/Resources/Public/JavaScripts/main.js
 }
 
 /**
@@ -349,8 +354,8 @@ lib.fluidContent.settings.media.popup.linkParams.ATagParams.dataWrap = class="{$
 * Includes
 *
 */
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:fetschersite/Configuration/TypoScript/Setup/" extension="ts">
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:fetschersite/Configuration/TypoScript/Extensions/" extension="tssetup">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:burkametall_template/Configuration/TypoScript/Setup/" extension="ts">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:burkametall_template/Configuration/TypoScript/Extensions/" extension="tssetup">
 
 
 /**

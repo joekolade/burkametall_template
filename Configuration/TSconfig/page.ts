@@ -30,7 +30,7 @@ RTE.default.buttons.pastetoggle.setActiveOnRteOpen = 1
 
 RTE.default {
   #angepasste CSS Datei in fileadmin speichern
-  contentCSS = EXT:fetschersite/Resources/Public/Css/rte.css
+  contentCSS = EXT:burkametall_template/Resources/Public/Css/rte.css
   showTagFreeClasses = 1
 }
 ## Klassen hinzufuegen
