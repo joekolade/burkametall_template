@@ -36,20 +36,9 @@ fetschersite {
     pageIds {
         root = 1
 
-        rootDE = 1
-        rootEN = 31
-        rootFR = 53
+        metaNaviRoot = 3
 
-        metaNaviRoot = 7
-
-        quickform = 22
-        contact = 6
-    }
-
-    quickformUid = 33
-
-    basics {
-        claimWrap = <i>|</i>
+        contact = 5
     }
 }
 # DEV Domains
@@ -83,4 +72,4 @@ styles.templates.partialRootPath = EXT:burkametall_template/Resources/Extensions
 * Cs_sea
 * https://docs.typo3.org/typo3cms/extensions/cs_seo/Developer/ExtendSitemap/Index.html#extend-sitemap
 */
-plugin.tx_csseo.sitemap.pages.rootPid = 27
+plugin.tx_csseo.sitemap.pages.rootPid = 1
