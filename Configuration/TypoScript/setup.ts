@@ -201,7 +201,7 @@ lib {
         10 = HMENU
         10 {
             special = rootline
-            special.range = 0|-1
+            special.range = 0a|-1
 
             1 = TMENU
             1 {
