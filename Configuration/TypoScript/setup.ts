@@ -187,7 +187,7 @@ lib {
 
 }
 
-[treeLevel = 2,3,4,5,6,7,8,9,10]
+[treeLevel = 1,2,3,4,5,6,7,8,9,10]
     lib.breadCrumb >
     lib.breadCrumb = COA
     lib.breadCrumb {
@@ -201,7 +201,7 @@ lib {
         10 = HMENU
         10 {
             special = rootline
-            special.range = 1|-1
+            special.range = 0|-1
 
             1 = TMENU
             1 {
