@@ -57,7 +57,8 @@
   /* Responsive: Portrait tablets and up */
   @media screen and (min-width: 768px) {
     position: absolute;
-    top: -98px;
+    // top: -98px; no lang menu
+    top: -70px;
     right: $grid-gutter-width/2;
     background: none;
     border: none;
