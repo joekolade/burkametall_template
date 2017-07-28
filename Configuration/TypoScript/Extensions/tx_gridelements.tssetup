@@ -1,0 +1,35 @@
+# ***********************************************
+# plugin: GridElements
+# ***********************************************
+tt_content.gridelements_pi1.20.10.setup {
+    // 6 Cols
+    6cols < lib.gridelements.defaultGridSetup
+    6cols {
+        wrap = <div class="row">|</div>
+        columns {
+            101.dataWrap = <div class="{field:flexform_xsCol1} {field:flexform_smCol1} {field:flexform_mdCol1} {field:flexform_lgCol1} {field:flexform_col41class}">|</div>
+            101.dataWrap.override = <div class="col-md-2">|</div>
+            102 < .101
+            102.dataWrap = <div class="{field:flexform_xsCol2} {field:flexform_smCol2} {field:flexform_mdCol2} {field:flexform_lgCol2} {field:flexform_col42class}">|</div>
+            102.dataWrap.override = <div class="col-md-2">|</div>
+            103 < .101
+            103.dataWrap = <div class="{field:flexform_xsCol3} {field:flexform_smCol3} {field:flexform_mdCol3} {field:flexform_lgCol3} {field:flexform_col43class}">|</div>
+            103.dataWrap.override = <div class="col-md-2">|</div>
+            104 < .101
+            104.dataWrap = <div class="{field:flexform_xsCol4} {field:flexform_smCol4} {field:flexform_mdCol4} {field:flexform_lgCol4} {field:flexform_col44class}">|</div>
+            104.dataWrap.override = <div class="col-md-2">|</div>
+            104.dataWrap.override.if.isNull.field = flexform_mdCol4
+            105 < .101
+            105.dataWrap = <div class="{field:flexform_xsCol5} {field:flexform_smCol5} {field:flexform_mdCol5} {field:flexform_lgCol5} {field:flexform_col54class}">|</div>
+            105.dataWrap.override = <div class="col-md-2">|</div>
+            105.dataWrap.override.if.isNull.field = flexform_mdCol5
+            106 < .101
+            106.dataWrap = <div class="{field:flexform_xsCol6} {field:flexform_smCol6} {field:flexform_mdCol6} {field:flexform_lgCol6} {field:flexform_col66class}">|</div>
+            106.dataWrap.override = <div class="col-md-2">|</div>
+            106.dataWrap.override.if.isNull.field = flexform_mdCol6
+        }
+    }
+}
+
+
+

@@ -1,5 +1,47 @@
 tx_gridelements {
     excludeLayoutIds = slider,tabsSimple,tabs4,tabs6,accordion,slider
+
+    setup {
+        col6 {
+            title = 6 columns
+            description = Inserts a 6-columns grid for content. The width of each column may be set for different screen sizes.
+            icon = EXT:bootstrap_grids/Resources/Public/Icons/grid_tabs4.png
+            frame = 2
+            topLevelLayout = 0
+            config {
+                colCount = 6
+                rowCount = 1
+                rows.1.columns {
+                    1 {
+                        name = Spalte 1
+                        colPos = 101
+                    }
+                    2 {
+                        name = Spalte 2
+                        colPos = 102
+                    }
+                    3 {
+                        name = Spalte 3
+                        colPos = 103
+                    }
+                    4 {
+                        name = Spalte 4
+                        colPos = 104
+                    }
+                    5 {
+                        name = Spalte 5
+                        colPos = 105
+                    }
+                    6 {
+                        name = Spalte 6
+                        colPos = 106
+                    }
+                }
+            }
+
+            flexformDS = FILE:EXT:burkametall_template/Configuration/FlexForm/flexform_6col.xml
+        }
+    }
 }
 
 TCEFORM.tt_content.layout.altLabels.1 = runde Bilder
