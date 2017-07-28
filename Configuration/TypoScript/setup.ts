@@ -330,13 +330,6 @@ lib.langSwitch.30.wrap = <li class="">|</li>
 */
 lib.fluidContent.settings.media.popup.linkParams.ATagParams.dataWrap = class="{$styles.content.textmedia.linkWrap.lightboxCssClass}" rel="{$styles.content.textmedia.linkWrap.lightboxRelAttribute}" title="{file:current:title}"
 
-/**
-* Includes
-*
-*/
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:burkametall_template/Configuration/TypoScript/Setup/" extension="ts">
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:burkametall_template/Configuration/TypoScript/Extensions/" extension="tssetup">
-
 
 /**
 * TS Includes
@@ -368,3 +361,11 @@ lib.fluidContent.settings.media.popup.linkParams.ATagParams.dataWrap = class="{$
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:go_maps_ext/Configuration/TypoScript/setup.txt">
 // frontend_editing
 #<INCLUDE_TYPOSCRIPT: source="FILE:EXT:frontend_editing/Configuration/TypoScript/setup.ts">
+#
+
+/**
+* Includes
+*
+*/
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:burkametall_template/Configuration/TypoScript/Setup/" extension="ts">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:burkametall_template/Configuration/TypoScript/Extensions/" extension="tssetup">
