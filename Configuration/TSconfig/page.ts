@@ -5,7 +5,7 @@ tx_gridelements {
         col6 {
             title = 6 columns
             description = Inserts a 6-columns grid for content. The width of each column may be set for different screen sizes.
-            icon = EXT:bootstrap_grids/Resources/Public/Icons/grid_col4.png
+            icon = EXT:bootstrap_grids/Resources/Public/Icons/grid_col4.gif
             frame = 2
             topLevelLayout = 0
             config {
