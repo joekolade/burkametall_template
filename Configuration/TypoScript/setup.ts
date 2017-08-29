@@ -188,7 +188,7 @@ lib {
 }
 
 [treeLevel = 1,2,3,4,5,6,7,8,9,10]
-    lib.breadCrumb >
+    #lib.breadCrumb >
     lib.breadCrumb = COA
     lib.breadCrumb {
         wrap = <div class="container bc"><ol class="breadcrumb hidden-xs">|</ol></div>
