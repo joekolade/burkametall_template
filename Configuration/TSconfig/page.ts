@@ -131,7 +131,7 @@ mod {
                                         name = Stage
                                         colspan = 4
                                         colPos = 11
-                                        allowed = mask_stageimage,shortcut
+                                        allowed = mask_stageimage,shortcut,mask_carouselitem
                                     }
                                 }
                             }

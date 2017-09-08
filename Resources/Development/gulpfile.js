@@ -182,7 +182,7 @@ gulp.task('t3copyJs', () => {
     }).pipe(gulp.dest('../Public/JavaScripts'));
 });
 gulp.task('typo3', ['t3copyStyles'], () => {
-    gulp.start('t3copyJs');
+    return gulp.start('t3copyJs');
 });
 
 gulp.task('build', ['lint', 'images', 'fonts', 'extras', 'typo3'], () => {

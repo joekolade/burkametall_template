@@ -1,0 +1,11 @@
+<div class="item">
+  <f:for each="{data.image}" as="file" iteration="it">
+    <f:image src="{file.uid}" alt="{file.alternative}" title="{file.title}" class="slide-{it.cycle}" treatIdAsReference="1" />
+  </f:for>
+  <div class="container">
+    <div class="carousel-caption">
+      <h1>{data.header}</h1>
+      <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data.bodytext}</f:format.html><br />
+    </div>
+  </div>
+</div>
