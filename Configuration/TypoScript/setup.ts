@@ -160,7 +160,7 @@ lib {
         10 < styles.content.get
         10 {
             select.where = colPos = 11
-            #select.languageField = sys_language_uid
+            slide = -1
         }
     }
 

@@ -1,48 +1,15 @@
-/* GLOBAL STYLES
--------------------------------------------------- */
-/* Padding below the footer and lighter body text */
 
-body {
-
-
-}
-
-
-/* CUSTOMIZE THE NAVBAR
--------------------------------------------------- */
-
-/* Special class on .container surrounding .navbar, used for positioning it into place. */
-.navbar-wrapper {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 20;
-}
-
-/* Flip around the padding for proper display in narrow viewports */
-.navbar-wrapper > .container {
-  padding-right: 0;
-  padding-left: 0;
-}
-.navbar-wrapper .navbar {
-  padding-right: 15px;
-  padding-left: 15px;
-}
-.navbar-wrapper .navbar .container {
-  width: auto;
-}
-
+//$carousel-height: 300px;
+$carousel-height: auto;
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
 /* Carousel base class */
 .carousel {
- height: auto;
-  margin-bottom: 60px;
-
+  height: auto;
 }
+
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   z-index: 10;
@@ -50,97 +17,53 @@ body {
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
- height: 390px;
+  min-height: $carousel-height;
   background-color: #777;
 }
-.carousel-inner > .item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
- width: 100%;
- height:auto;
 
+.carousel-inner > .item > img {
+  width: 100%;
+  height: auto;
 }
+
 .carousel-fade .carousel-inner .item {
   -webkit-transition-property: opacity;
   transition-property: opacity;
 }
+
 .carousel-fade .carousel-inner .item,
 .carousel-fade .carousel-inner .active.left,
 .carousel-fade .carousel-inner .active.right {
   opacity: 0;
 }
+
 .carousel-fade .carousel-inner .active,
 .carousel-fade .carousel-inner .next.left,
 .carousel-fade .carousel-inner .prev.right {
   opacity: 1;
 }
+
 .carousel-fade .carousel-inner .next,
 .carousel-fade .carousel-inner .prev,
 .carousel-fade .carousel-inner .active.left,
 .carousel-fade .carousel-inner .active.right {
   left: 0;
   -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
+
 .carousel-fade .carousel-control {
   z-index: 2;
 }
 
-
-/* MARKETING CONTENT
--------------------------------------------------- */
-
-/* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
-  margin-bottom: 20px;
-  text-align: center;
+.carousel .carousel-indicators li {
+  margin-right: 0px;
 }
-.marketing h2 {
-  font-weight: normal;
-}
-.marketing .col-lg-4 p {
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-
-/* Featurettes
-------------------------- */
-
-.featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
-}
-
-/* Thin out the marketing headings */
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -1px;
-}
-
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
 @media (min-width: 768px) {
-  /* Navbar positioning foo */
-  .navbar-wrapper {
-    margin-top: 20px;
-  }
-  .navbar-wrapper .container {
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-  .navbar-wrapper .navbar {
-    padding-right: 0;
-    padding-left: 0;
-  }
-
-  /* The navbar becomes detached from the top, so we round the corners */
-  .navbar-wrapper .navbar {
-    border-radius: 4px;
-  }
 
   /* Bump up size of carousel content */
   .carousel-caption p {
@@ -149,13 +72,86 @@ body {
     line-height: 1.4;
   }
 
-  .featurette-heading {
-    font-size: 50px;
-  }
 }
 
-@media (min-width: 992px) {
-  .featurette-heading {
-    margin-top: 120px;
-  }
+.carousel-caption {
+  top: 80px;
+  color: #fff;
+  left: 100px;
+  margin-bottom: 30px;
+  right: auto;
+  bottom: auto;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.carousel-caption > h1 {
+  font-size: 30px;
+}
+
+.carousel-caption > p {
+  font-size: 18px;
+}
+
+.carousel-caption > h1,
+.carousel-caption > h2 {
+  display: inline-block;
+}
+
+.carousel-caption > * {
+  text-shadow: none;
+  color: #444;
+  padding: 0 3px;
+  display: block;
+  background: white;
+  margin-bottom: 0;
+}
+
+.carousel-caption > *:first-child {
+  margin-top: 0;
+}
+
+.carousel-caption > p {
+  margin-bottom: 0;
+}
+
+.carousel-caption > br {
+  display: none;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none;
+}
+
+.carousel-control.left {
+  margin-left: 100px;
+  right: inherit;
+}
+
+.carousel-control.right {
+  margin-left: 130px;
+  right: inherit;
+}
+
+.carousel-control {
+  text-align: left;
+  width: 20px;
+  z-index: 999;
+}
+
+.carousel-control {
+  color: #fff;
+  opacity: 1;
+}
+
+.carousel-control .icon-prev,
+.carousel-control .icon-next,
+.carousel-control .glyphicon-circle-arrow-left,
+.carousel-control .glyphicon-circle-arrow-right {
+  display: inline-block;
+  margin-top: -10px;
+  position: absolute;
+  top: 80%;
+  z-index: 5;
 }
