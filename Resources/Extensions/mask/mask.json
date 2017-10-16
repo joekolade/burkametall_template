@@ -1,6 +1,27 @@
 {
     "tt_content": {
         "elements": {
+            "carouselitem": {
+                "label": "Karussel",
+                "key": "carouselitem",
+                "shortLabel": "",
+                "description": "",
+                "icon": "",
+                "color": "#000000",
+                "columns": [
+                    "image",
+                    "header",
+                    "bodytext"
+                ],
+                "labels": [
+                    "",
+                    "",
+                    ""
+                ],
+                "options": {
+                    "2": "rte"
+                }
+            },
             "spacer": {
                 "label": "Spacer",
                 "key": "spacer",
@@ -230,15 +251,11 @@
         }
     },
     "pages": {
-        "elements": {
-        },
-        "sql": {
-        },
-        "tca": {
-        }
+        "elements": [],
+        "sql": [],
+        "tca": []
     },
     "sys_file_reference": {
-        "sql": {
-        }
+        "sql": []
     }
 }
