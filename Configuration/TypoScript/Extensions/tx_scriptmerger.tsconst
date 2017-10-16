@@ -4,8 +4,7 @@
 *
 */
 
-# TODO reactivate scriptmerger
-plugin.tx_scriptmerger.css.enable = 0
+plugin.tx_scriptmerger.css.enable = 1
 plugin.tx_scriptmerger.css.compress.enable = 0
 plugin.tx_scriptmerger.css.merge.ignore = https:\/\/fonts.googleapis.com\/css
 
