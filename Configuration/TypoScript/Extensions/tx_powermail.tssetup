@@ -7,6 +7,11 @@ plugin.tx_powermail {
     }
 }
 
+plugin.tx_powermail {
+    settings.setup.db.enable = 0
+    settings.setup.misc.htmlForLabels = 1
+}
+
 [PIDinRootline = {$fetschersite.pageIds.contact}]
 plugin.tx_powermail.settings.setup.styles.framework.offsetClasses = {$plugin.tx_powermail.settings.styles.bootstrap.offsetClassesGeneral}
 [global]
