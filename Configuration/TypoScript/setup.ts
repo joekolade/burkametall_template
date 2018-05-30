@@ -33,7 +33,7 @@ page.meta {
     google-site-verification = 9x4g8j2RqMmROgs0wXzcCpTN6Qrusl9gNYabbr5sdRI
 }
 
-config.baseURL = http://{$fetschersite.site.domain}/
+config.baseURL = https://{$fetschersite.site.domain}/
 config.tx_realurl_enable = 1
 config.tx_frontend_editing = 1
 
