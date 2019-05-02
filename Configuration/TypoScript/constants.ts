@@ -3,7 +3,7 @@
 */
 
 // FSC
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fluid_styled_content/Configuration/TypoScript/Static/constants.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fluid_styled_content/Configuration/TypoScript/constants.txt">
 // Gridelements
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:gridelements/Configuration/TypoScript/constants.ts">
 // powermail
@@ -15,13 +15,15 @@
 // jh_magnifiq
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:jh_magnificpopup/Configuration/TypoScript/Default/constants.txt">
 // scriptmerger
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:scriptmerger/Configuration/constants.txt">
+#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:scriptmerger/Configuration/constants.txt">
 // sourceopt
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:sourceopt/Configuration/TypoScript/constants.txt">
 // go_maps_ext
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:go_maps_ext/Configuration/TypoScript/constants.txt">
 // frontend_editing
 #<INCLUDE_TYPOSCRIPT: source="FILE:EXT:frontend_editing/Configuration/TypoScript/constants.ts">
+// pxa_cookie_bar
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:pxa_cookie_bar/Configuration/TypoScript/constants.txt">
 
 fetschersite {
     site {
@@ -69,7 +71,16 @@ styles.templates.partialRootPath = EXT:burkametall_template/Resources/Extensions
 
 
 /**
-* Cs_sea
-* https://docs.typo3.org/typo3cms/extensions/cs_seo/Developer/ExtendSitemap/Index.html#extend-sitemap
-*/
+ * cs seo
+ * https://docs.typo3.org/typo3cms/extensions/cs_seo/Developer/ExtendSitemap/Index.html#extend-sitemap
+ */
 plugin.tx_csseo.sitemap.pages.rootPid = 1
+
+/**
+ * pxa cookie bar
+ */
+
+plugin.tx_pxacookiebar.settings.position = bottom
+plugin.tx_pxacookiebar.view.templateRootPath = EXT:burkametall_template/Resources/Extensions/pxa_cookie_bar/Templates
+plugin.tx_pxacookiebar.view.partialRootPath = EXT:burkametall_template/Resources/Extensions/pxa_cookie_bar/Partials
+plugin.tx_pxacookiebar.view.layoutRootPath = EXT:burkametall_template/Resources/Extensions/pxa_cookie_bar/Layouts

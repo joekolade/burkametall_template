@@ -16,27 +16,25 @@ $EM_CONF[$_EXTKEY] = array(
 	'category' => 'distribution',
 	'author' => 'Joe Schäfer',
 	'author_email' => 'mail@schaefer-webentwicklung.de',
-	'state' => 'stable',
+	'state' => 'beta',
 	'internal' => '',
 	'uploadfolder' => '0',
 	'createDirs' => '',
 	'clearCacheOnLoad' => 0,
-	'version' => '1.5.1',
+	'version' => '2.0.0',
 	'constraints' => array(
 		'depends' => array(
-			'typo3' => '7.6.0-8.99.99',
-			'fsc_layout_wrap' => '',
-			'bootstrap_grids' => '',
+			'typo3' => '8.7.24-8.7.99',
 			'gridelements' => '',
+			'bootstrap_grids' => '1.3.0-1.4.99',
+			'fsc_layout_wrap' => '',
 			'mask' => '',
 			'powermail' => '',
 			'realurl' => '',
 			'dd_googlesitemap' => '',
 			'jh_magnificpopup' => '',
-			't3monitoring_client' => '',
 			'cs_seo' => '',
 			'sourceopt' => '',
-			'scriptmerger' => '',
 			// Sysextensions
 			'opendocs' => '',
 			'recycler' => '',
@@ -45,13 +43,14 @@ $EM_CONF[$_EXTKEY] = array(
 		'conflicts' => array(
 		),
 		'suggests' => array(
-			'rx_unrollsavebuttons' => '',
+			'scriptmerger' => '',
+			'unroll' => '',
 			'go_maps_ext' => '',
 			'fsc_layout_wrap' => '',
 			'frontend_editing' => '',
 			'lib_js_lazysizes' => '', // https://github.com/joekolade/lib_js_lazysizes
 			'cookieconsent2' => '',
-			'fluid-styled-responsive-images' => ''
+            'fluid_styled_responsive_images' => ''
 		),
 	),
 );

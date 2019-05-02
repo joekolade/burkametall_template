@@ -3861,20 +3861,20 @@ fieldset[disabled] .btn-info.focus {
 
 .btn-warning {
   color: #fff;
-  background-color: #ff7d00;
-  border-color: #e67100;
+  background-color: #00326d;
+  border-color: #002654;
 }
 
 .btn-warning:focus, .btn-warning.focus {
   color: #fff;
-  background-color: #cc6400;
-  border-color: #663200;
+  background-color: #001b3a;
+  border-color: #000;
 }
 
 .btn-warning:hover {
   color: #fff;
-  background-color: #cc6400;
-  border-color: #a85300;
+  background-color: #001b3a;
+  border-color: #000a16;
 }
 
 .btn-warning:active, .btn-warning.active,

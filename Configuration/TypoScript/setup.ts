@@ -336,7 +336,7 @@ lib.fluidContent.settings.media.popup.linkParams.ATagParams.dataWrap = class="{$
 */
 
 // FSC
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fluid_styled_content/Configuration/TypoScript/Static/setup.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fluid_styled_content/Configuration/TypoScript/setup.txt">
 // FSC LAyout wrap
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:fluid_styled_content/Configuration/TypoScript/Styling/setup.txt">
 // Gridelements
@@ -354,13 +354,15 @@ lib.fluidContent.settings.media.popup.linkParams.ATagParams.dataWrap = class="{$
 // mask
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:mask/Configuration/TypoScript/setup.txt">
 // scriptmerger
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:scriptmerger/Configuration/setup.txt">
+#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:scriptmerger/Configuration/setup.txt">
 // sourceopt
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:sourceopt/Configuration/TypoScript/setup.txt">
 // go_maps_ext
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:go_maps_ext/Configuration/TypoScript/setup.txt">
 // frontend_editing
 #<INCLUDE_TYPOSCRIPT: source="FILE:EXT:frontend_editing/Configuration/TypoScript/setup.ts">
+// pxa_cookie_bar
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:pxa_cookie_bar/Configuration/TypoScript/setup.txt">
 #
 
 /**
@@ -369,3 +371,14 @@ lib.fluidContent.settings.media.popup.linkParams.ATagParams.dataWrap = class="{$
 */
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:burkametall_template/Configuration/TypoScript/Setup/" extension="ts">
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:burkametall_template/Configuration/TypoScript/Extensions/" extension="tssetup">
+
+// styles
+
+
+page {
+    cssInline {
+        20 = TEXT
+        20.value = div[class*=col-]>:first-child>header>h1, div[class*=col-]>:first-child>header>h2, div[class*=col-]>:first-child>header>h3 { margin-top: 0; }
+
+    }
+}
